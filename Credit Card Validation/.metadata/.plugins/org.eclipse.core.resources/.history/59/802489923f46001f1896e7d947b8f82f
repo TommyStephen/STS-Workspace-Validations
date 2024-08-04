@@ -1,0 +1,7 @@
+package study.validation;
+
+import jakarta.validation.ConstraintValidator;
+
+public class FourteenDigitValidator implements ConstraintValidator<A, T> {
+
+}

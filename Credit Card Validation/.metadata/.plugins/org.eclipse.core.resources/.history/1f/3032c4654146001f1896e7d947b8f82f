@@ -1,0 +1,19 @@
+1.	Create a spring boot application. 
+
+2.	Add the following dependency for validation from maven repository
+	<dependency>
+    	<groupId>org.springframework.boot</groupId>
+    	<artifactId>spring-boot-starter-validation</artifactId>
+	</dependency>
+	
+3.	create a package validation
+
+4.	Inside the package create an annotation (ValidAadharCard) in the same way as 
+	we create classes and interfaces. Notice that annotation is an interface 
+	with @ symbol
+
+5.	Create the validator class (FourteenDigitValidator) implements ConstraintValidator
+
+6.	
+
+	

@@ -1,0 +1,17 @@
+package study.validation;
+
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
+
+public class FourteenDigitValidator implements ConstraintValidator<ValidAadharCard, String> {
+
+	//Regex to validate
+	private static final String AADHAR_PATTERN = "^\\d{14}$";
+	
+	@Override
+	public boolean isValid(String value, ConstraintValidatorContext context) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

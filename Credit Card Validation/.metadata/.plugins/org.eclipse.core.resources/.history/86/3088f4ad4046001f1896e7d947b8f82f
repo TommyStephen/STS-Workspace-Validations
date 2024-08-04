@@ -1,0 +1,9 @@
+1.	Create a spring boot application. 
+2.	Add the following dependency for validation from maven repository
+	<dependency>
+    	<groupId>org.springframework.boot</groupId>
+    	<artifactId>spring-boot-starter-validation</artifactId>
+	</dependency>
+3.	To create a custom annotation, first create an interface as done in the
+	project - ValidAadharCard
+	

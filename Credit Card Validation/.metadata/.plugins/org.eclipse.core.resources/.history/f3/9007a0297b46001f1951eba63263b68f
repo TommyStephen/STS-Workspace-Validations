@@ -1,0 +1,7 @@
+package study.validation.pan;
+
+import jakarta.validation.ConstraintValidator;
+
+public class PanCardValidator implements ConstraintValidator<A, T> {
+
+}

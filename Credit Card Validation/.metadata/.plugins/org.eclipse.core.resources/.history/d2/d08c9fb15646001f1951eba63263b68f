@@ -1,0 +1,48 @@
+package study.model;
+
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import study.aadhar.validation.ValidAadharCard;
+
+public class UserDTO {
+	
+	@NotBlank
+	@NotNull
+	private String name;
+	
+	@ValidAadharCard
+	private String aadharNumber;
+
+	public UserDTO() {
+		super();
+	}
+
+	public UserDTO(@NotBlank @NotNull String name, String aadharNumber) {
+		super();
+		this.name = name;
+		this.aadharNumber = aadharNumber;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getAadharNumber() {
+		return aadharNumber;
+	}
+
+	public void setAadharNumber(String aadharNumber) {
+		this.aadharNumber = aadharNumber;
+	}
+
+	@Override
+	public String toString() {
+		return "UserDTO [name=" + name + ", AadharNumber=" + aadharNumber + "]";
+	}
+	
+	
+}

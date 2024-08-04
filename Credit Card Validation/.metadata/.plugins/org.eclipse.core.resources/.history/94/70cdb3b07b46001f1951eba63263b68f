@@ -1,0 +1,14 @@
+package study.validation.pan;
+
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
+
+public class PanCardValidator implements ConstraintValidator<A, T> {
+
+	@Override
+	public boolean isValid(T value, ConstraintValidatorContext context) {
+		
+		return false;
+	}
+
+}

@@ -1,0 +1,27 @@
+package study.validation.pan;
+
+import static java.lang.annotation.ElementType.FIELD;
+import static java.lang.annotation.ElementType.PARAMETER;
+import static java.lang.annotation.RetentionPolicy.RUNTIME;
+
+import java.lang.annotation.Retention;
+import java.lang.annotation.Target;
+
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
+
+public class PanCardValidator implements ConstraintValidator<ValidPanCard, String> {
+
+	@Retention(RUNTIME)
+	@Target({ FIELD, PARAMETER })
+	public @interface ValidPanCard {
+
+	}
+
+	@Override
+	public boolean isValid(String value, ConstraintValidatorContext context) {
+		
+		return false;
+	}
+
+}
